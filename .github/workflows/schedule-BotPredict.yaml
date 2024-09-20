@@ -1,4 +1,4 @@
-name: run Ryan_LLM_Forecast_Bot.ipynb
+name: run Copy_of_Ryan_LLM_Forecast_Bot.ipynb
 
 # general info here: https://github.com/patrickloeber/python-github-action-template
 # specific info about yaananth notebook runner and this workflow here: https://github.com/yaananth/run-notebook
@@ -29,7 +29,7 @@ jobs:
           SECRETS: ${{ toJson(secrets) }}
           GITHUB: ${{ toJson(github) }}
         with:
-          notebook: "Ryan_LLM_Forecast_Bot.ipynb"
+          notebook: "Copy_of_Ryan_LLM_Forecast_Bot.ipynb"
           isReport: False
           poll: False # not sure what exactly this does, but seemed to cause a perpetual loop when I used it
       - uses: actions/upload-artifact@v4
